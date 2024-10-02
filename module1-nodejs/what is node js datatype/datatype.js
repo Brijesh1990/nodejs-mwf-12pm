@@ -1,29 +1,51 @@
-/*  data type : A data type is which type of data or values stored inside of variables i.e called data-type  
+/*   
+There are two types of data types 
 
-   types of data types--
+a) primitive datatype
+    
+    var a=10;
+    var a=10.646464;
+    var name="Brijesh";
+    var name;
+    var name=null;
+    var b=true,
+    var c=false;
 
-   a)number
-   b)boolean
-   c)string
-   d)bigInteger
-   e)null
-   f)undefined
-   g)Symbol
-   h)object
+  
+b) non-primitive datatypes 
+
+   var name={id:1,name:"brijesh"}
+   var name=["brijesh","rajesh","sameer"]
+   var age=Symbol(35)
+
 */
 
 
-let a=10; //number
-let b=10.64464; //number
-let c=102121n; //bigInteger
-let d; //undefined
-let e=null; //null
-let f="brijesh"; //string
-let g={id:2,name:"brijesh"} //object
-let h=Symbol(10.56454); //Symbol
-let i=true; //boolean
-let j=false;
 
-// console.log(typeof(a,'\n',b));
-// console.log(typeof(h));
-console.log(typeof(g));
+//   let a=1545454;  //number
+//   console.log(typeof(a));
+
+
+// let a=1545454644545455n;  //nth of numbers bigInteger
+// console.log(typeof(a));
+
+
+// let a;  //undefined 
+// console.log(typeof(a));
+
+// let a=null;  // 
+// console.log(typeof(a));
+
+// let a=true;  // 
+// console.log(typeof(a));
+
+
+// let a={i:1,name:"brijesh",age:35};  // 
+// console.log(typeof(a))
+
+// let a=["brijesh","rajesh","jaya","kumar","nilesh"];  // 
+// console.log(typeof(a))
+
+
+let a=Symbol(1545454);
+console.log(typeof(a));
