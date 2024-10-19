@@ -1,0 +1,14 @@
+{
+  "name": "formidable_file_upload",
+  "version": "1.0.0",
+  "description": "file_upload_nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "test,file_upload_nodejs"
+  },
+  "author": "brijesh kumar pandey",
+  "license": "ISC",
+  "dependencies": {
+    "formidable": "^3.5.2"
+  }
+}
