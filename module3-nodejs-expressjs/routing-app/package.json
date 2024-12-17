@@ -1,0 +1,16 @@
+{
+  "name": "routing-app",
+  "version": "1.0.0",
+  "description": "routing-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "routes app",
+    "dev":"nodemon pagenot-found.js"
+  },
+  "author": "brijesh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}
