@@ -18,7 +18,7 @@
 <hr class="border border-1 w-25" align="left">
 <table class="table table-responsive mt-4">
     <tr>
-        <th>#id</th>
+       
         <th>Name</th>
         <th>Email</th>
         <th>Phone</th>
@@ -27,19 +27,23 @@
         <th>Address</th>
         <th>Action</th>
     </tr>
+
+     <% items.forEach(item=>{ %>
+
     <tr>
-        <td>1</td>
-        <td>B</td>
-        <td>b@gmail.com</td>
-        <td>912121221</td>
-        <td>360005</td>
-        <td>35</td>
-        <td>150 feet ring road</td>
-        <td><a href="" class="btn btn-sm btn-danger text-white"><span class="bi bi-trash text-white"></span></a>
-        | <a href="" class="btn btn-sm btn-primary text-white"><span class="bi bi-pencil text-white"></span></a>
+        <td><%= item.name %></td>
+        <td><%= item.email %></td>
+        <td><%= item.phone %></td>
+        <td><%= item.pin %></td>
+        <td><%= item.age %></td>
+        <td><%= item.address %></td>
+      
+        <td><a href="/delete/<%= item._id %>" class="btn btn-sm btn-danger text-white"><span class="bi bi-trash text-white"></span></a>
+        | <a href="/edit/<%= item._id %>" class="btn btn-sm btn-primary text-white"><span class="bi bi-pencil text-white"></span></a>
         
         </td>
     </tr>
+    <% }) %>
 </table>
 </div>    
 
